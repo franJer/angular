@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <td><button (click)= toggle()>Add to DOM / Remove from DOM</button></td>
+  </tr>
+  <tr>
+    <td>
+        <blockquote *ngIf="inDOM;else other_content">
+          <p>hola</p>
+        </blockquote>
+        <ng-template #other_content>other content here...</ng-template>
+    </td>
+  </tr>
+</table>

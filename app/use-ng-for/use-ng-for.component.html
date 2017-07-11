@@ -1,0 +1,8 @@
+<li *ngFor="let superHeroe of superheroes">
+  {{superHeroe.name}} <br>
+  {{superHeroe.alterEgo}} <br>
+  <ul>
+      <li  *ngFor="let string of superHeroe.superporwer">
+        {{string}}
+  </ul>
+</li>
